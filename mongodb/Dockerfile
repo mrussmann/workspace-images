@@ -9,3 +9,4 @@ RUN sudo apt-get update \
  && sudo rm -rf /var/lib/apt/lists/*
 RUN sudo mkdir -p /data/db \
  && sudo chown gitpod:gitpod -R /data/db
+ RUN wget --quiet -O /workspace/ "https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.3.0-linux-x86_64.tar.gz"
